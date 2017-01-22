@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="http://placehold.it/150x100" width="" height="" alt="City of Sedona"></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="#">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="search">
+          <form>
+            <fieldset>
+              <legend>Инфраструктура:</legend>
+              <label>
+                <input type="checkbox" name="pool" checked>Бассейн</label>
+              <label>
+                <input type="checkbox" name="parking">Парковка</label>
+              <label>
+                <input type="checkbox" name="wi-fi">Wi-Fi</label>
+            </fieldset>
+            <fieldset>
+              <legend>Тип жилья:</legend>
+              <label>
+                <input type="checkbox" name="hotel" checked>Гостиница</label>
+              <label>
+                <input type="checkbox" name="motel" checked>Мотель</label>
+              <label>
+                <input type="checkbox" name="apartment" checked>Апартаменты</label>
+            </fieldset>
+            <fieldset>
+              <legend>Стоимость в сутки (Р):</legend>
+              <input type="textarea" value="От 0" name="cost-from">
+              <input type="textarea" value="До 3000" name="cost-to">
+              <div class="cost-filter">
+                <div class="cost-filter-from"></div>
+                <div class="cost-filter-to"></div>
+              </div>
+            </fieldset>
+            <button type="submit">Показать</button>
+          </form>
+        </section>
+        <section class="sort">
+          <div class="sort-result">
+            Найдено: 3
+          </div>
+          <div class="sort-types">
+            Сортировка:
+            <ul>
+              <li><a href="">По цене</a></li>
+              <li><a href="">По типу</a></li>
+              <li><a href="">По рейтингу</a></li>
+            </ul>
+          </div>
+          <div class="sort-desc">
+          </div>
+          <div class="sort-asc">
+          </div>
+        </section>
+        <section class="search-result">
+          <article>
+            <img src="#" width="" height="" alt="hotel-1">
+            <div class="left">
+              <h2>Amara Resort & Spa</h2>
+              <p>Гостиница</p>
+              <p>От 4000 Р.</p>
+              <a href="#" class="more">Подробнее</a>
+              <a href="#" class="book">Забронировать</a>
+            </div>
+            <div class="right">
+              <div class="stars 4"></div>
+              <div class="rating">Рейтинг: 8,5</div>
+            </div>
+          </article>
+          <article>
+            <img src="#" width="" height="" alt="hotel-2">
+            <div class="left">
+              <h2>Desert Quail Inn</h2>
+              <p>Мотель</p>
+              <p>От 3000 Р.</p>
+              <a href="#" class="more">Подробнее</a>
+              <a href="#" class="book">Забронировать</a>
+            </div>
+            <div class="right">
+              <div class="stars 3"></div>
+              <div class="rating">Рейтинг: 8,9</div>
+            </div>
+          </article>
+          <article>
+            <img src="#" width="" height="" alt="hotel-3">
+            <div class="left">
+              <h2>Villas at Poco Diablo</h2>
+              <p>Апартаменты</p>
+              <p>От 2000 Р.</p>
+              <a href="#" class="more">Подробнее</a>
+              <a href="#" class="book">Забронировать</a>
+            </div>
+            <div class="right">
+              <div class="stars 2"></div>
+              <div class="rating">Рейтинг: 9,2</div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <section class="footer-tag">
+          <p>#visitsedona</p>
+        </section>
+        <section class="footer-social">
+          <a class="social-btn social-btn-twt" href="#">Tweeter</a>
+          <a class="social-btn social-btn-fb" href="#">Facebook</a>
+          <a class="social-btn social-btn-you" href="#">YouTube</a>
+        </section>
+        <section class="footer-copyright">
+          <a href="https://htmlacademy.ru"><img src="http://placehold.it/150x100" width="" height="" alt="htmlacademy.ru"></a>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
