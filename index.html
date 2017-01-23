@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-
   <body>
     <header>
       <div class="container">
-        <div class="logo">
-          <a href="#"><img src="http://placehold.it/150x100" width="" height="" alt="City of Sedona"></a>
-        </div>
+          <a class="logo" href="#"><img src="http://placehold.it/150x100" width="" height="" alt="City of Sedona"></a>
         <nav>
           <ul>
             <li><a href="#">Информация</a></li>
@@ -25,15 +21,9 @@
     <main>
       <div class="container">
         <section class="mainstage">
-          <p><img src="http://placehold.it/150x100" width="" height="" alt="welcome-to-the-gorgeous"></p>
-          <p>Sedona</p>
-          <p><img src="http://placehold.it/150x100" width="" height="" alt="because-the-grand-canyon-sucks"></p>
-          <div class="white">
-            <polygon></polygon>
-          </div>
         </section>
         <section class="review">
-          <p>Седона - небольшой городок в аризоне, заслуживающий большего!</p>
+          <h3>Седона - небольшой городок в аризоне, заслуживающий большего!</h3>
           <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
         </section>
         <section class="feature-img">
@@ -44,7 +34,6 @@
           </div>
           <img src="" width="" height="" alt="feature 1">
         </section>
-
         <section class="grid-3">
           <div>
             <p class="accommodation">Жилье</p>
@@ -59,7 +48,6 @@
             <p>Не только китайского, но и местного производства!</p>
           </div>
         </section>
-
         <section class="img-feature">
           <div>
             <h3>Там есть мост дьявола</h3>
@@ -68,7 +56,6 @@
           </div>
           <img src="" width="" height="" alt="feature 2">
         </section>
-
         <section class="grid-3 gray">
           <div>
             <p>Небольшая площадь</p>
@@ -92,23 +79,31 @@
           <button name="form-opener">Поиск гостиницы в седоне</button>
         </section>
         <section class="map">
-          <div class="form">
-            <form>
-              <label>
-                <input type="textarea" name="date-from" value="">Дата заезда:
-              </label>
-              <label>
-                <input type="textarea" name="date-to" value="">Дата выезда:
-              </label>
-              <label>
-                <input type="textarea" name="adults" value="">Взрослые:
-              </label>
-              <label>
-                <input type="textarea" name="kids" value="">Дети:
-              </label>
+          <form class="trip">
+            <fieldset>
+              <label for="date-from">Дата заезда:</label>
+              <input type="textarea" id="date-from" name="date-from" value="">
+              <div class="calendar"></div>
+              </fieldset>
+              <fieldset>
+                <label for="date-to">Дата выезда:</label>
+                <input type="textarea" id="date-to" name="date-to" value="">
+                <div class="calendar"></div>
+              </fieldset>
+              <fieldset>
+                <label for="adults">Взрослые:</label>
+                <div class="minus" id="adult-minus"></div>
+                <input type="textarea" id="adults" name="adults" value="">
+                <div class="plus" id="adult-plus"></div>
+              </fieldset>
+              <fieldset>
+                <label for="kids">Дети:</label>
+                <div class="minus" id="kids-minus"></div>
+                <input type="textarea" id="kids" name="kids" value="">
+                <div class="plus" id="kids-plus"></div>
+              </fieldset>
               <button type="submit">Найти</button>
             </form>
-          </div>
         </section>
       </div>
     </main>
@@ -121,13 +116,11 @@
           <a class="social-btn social-btn-twt" href="#">Tweeter</a>
           <a class="social-btn social-btn-fb" href="#">Facebook</a>
           <a class="social-btn social-btn-you" href="#">YouTube</a>
-
         </section>
         <section class="footer-copyright">
-          <a href="https://htmlacademy.ru"><img src="http://placehold.it/150x100" width="" height="" alt="htmlacademy.ru"></a>
+          <a href="https://htmlacademy.ru">Website by</a>
         </section>
       </div>
     </footer>
   </body>
-
 </html>
