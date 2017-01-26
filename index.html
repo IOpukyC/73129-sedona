@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link href="css/style.css" rel="stylesheet">
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
     <header>
       <div class="container">
-        <a class="logo" href="#"><img src="http://placehold.it/150x100" width="" height="" alt="City of Sedona"></a>
+        <a class="logo" href="#">
+          <img src="img/logo.png" width="138" height="70" alt="City of Sedona">
+        </a>
         <nav>
           <ul>
             <li><a href="#">Информация</a></li>
@@ -32,7 +35,7 @@
             <p>- #1 -</p>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <img src="" width="" height="" alt="feature 1">
+          <img src="img/index-sidepic.jpg" width="800" height="256" alt="feature 1">
         </section>
         <section class="grid-3">
           <div>
@@ -54,7 +57,7 @@
             <p>- #2 -</p>
             <p>Дя, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
-          <img src="" width="" height="" alt="feature 2">
+          <img src="img/index-sidepic-left.jpg" width="800" height="256" alt="feature 2">
         </section>
         <section class="grid-3 gray">
           <div>
@@ -82,24 +85,24 @@
           <form class="trip">
             <fieldset>
               <label for="date-from">Дата заезда:</label>
-              <input type="textarea" id="date-from" name="date-from" value="">
+              <input type="text" id="date-from" name="date-from" value="">
               <div class="calendar"></div>
               </fieldset>
               <fieldset>
                 <label for="date-to">Дата выезда:</label>
-                <input type="textarea" id="date-to" name="date-to" value="">
+                <input type="text" id="date-to" name="date-to" value="">
                 <div class="calendar"></div>
               </fieldset>
               <fieldset>
                 <label for="adults">Взрослые:</label>
                 <div class="minus" id="adult-minus"></div>
-                <input type="textarea" id="adults" name="adults" value="">
+                <input type="text" id="adults" name="adults" value="">
                 <div class="plus" id="adult-plus"></div>
               </fieldset>
               <fieldset>
                 <label for="kids">Дети:</label>
                 <div class="minus" id="kids-minus"></div>
-                <input type="textarea" id="kids" name="kids" value="">
+                <input type="text" id="kids" name="kids" value="">
                 <div class="plus" id="kids-plus"></div>
               </fieldset>
               <button type="submit">Найти</button>
