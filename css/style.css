@@ -109,9 +109,9 @@ header ul li {
 .mainstage {
   height: 510px;
   background:
-    url(../img/welcome.png) center no-repeat,
-    url(../img/stage-mask.png) bottom no-repeat,
-    #dcdcdc url(../img/index-stage.jpg) center 20% no-repeat;
+    url('../img/welcome.png') center no-repeat,
+    url('../img/stage-mask.png') bottom no-repeat,
+    #dcdcdc url('../img/index-stage.jpg') center 20% no-repeat;
 }
 
 main .container {
@@ -200,7 +200,7 @@ main .container {
   display: block;
   width: 75px;
   height: 75px;
-  background: transparent url('../img/acco-icon.png') no-repeat;
+  background: url('../img/acco-icon.png') no-repeat;
 }
 
 .feature-name.food::before {
@@ -212,7 +212,7 @@ main .container {
   display: block;
   width: 74px;
   height: 70px;
-  background: transparent url('../img/food-icon.png') no-repeat;
+  background: url('../img/food-icon.png') no-repeat;
 }
 
 .feature-name.souvenirs::before {
@@ -224,7 +224,7 @@ main .container {
   display: block;
   width: 64px;
   height: 76px;
-  background: transparent url('../img/souv-icon.png') no-repeat;
+  background: url('../img/souv-icon.png') no-repeat;
 }
 
 .grey div{
@@ -284,7 +284,7 @@ main .container {
 }
 
 .map {
-  background: url(../img/map.jpg) center no-repeat;
+  background: url('../img/map.jpg') center no-repeat;
   height: 593px;
   justify-content:center;
 }
@@ -322,6 +322,34 @@ main .container {
 .search-form-visible {
   display: flex;
   animation: form_opacity 0.7s;
+}
+
+fieldset.rel {
+  position: relative;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.calend{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 37px;
+  width: 40px;
+  border: none;
+  background: #f2f2f2 url('../img/calend.png') no-repeat 50% 50%;
+  cursor: pointer;
+  outline: none;
+  color: #a9a9a9;
+}
+
+.calend:hover{
+  background: #f2f2f2 url('../img/calend-hover.png') no-repeat 50% 50%;
+}
+
+.calend:active{
+  background: #f2f2f2 url('../img/calend-active.png') no-repeat 50% 50%;
 }
 
 .search-form input {
@@ -383,6 +411,14 @@ main .container {
   margin-bottom: 10px
 }
 
+.search-form .entry {
+  margin-right: 20px;
+}
+
+.search-form .departure {
+  margin-right: 16px;
+}
+
 .search-form .amount {
   display: flex;
   justify-content: space-between;
@@ -396,7 +432,7 @@ main .container {
   height: 37px;
   width: 40px;
   border: none;
-  background: #f2f2f2 url(../img/plus.png) no-repeat 50% 50%;
+  background: #f2f2f2 url('../img/plus.png') no-repeat 50% 50%;
   cursor: pointer;
   outline: none;
   color: #a9a9a9
@@ -404,7 +440,7 @@ main .container {
 
 .amount button[name="plus-adult"] {
   margin-right: 52px;
-  background: #f2f2f2 url(../img/plus.png) no-repeat 50% 50%;
+  background: #f2f2f2 url('../img/plus.png') no-repeat 50% 50%;
   cursor: pointer;
   outline: none;
 }
@@ -435,14 +471,14 @@ main .container {
 
 .amount button[name="minus-adult"] {
   margin-left: 40px;
-  background: #f2f2f2 url(../img/minus.png) no-repeat 50% 50%;
+  background: #f2f2f2 url('../img/minus.png') no-repeat 50% 50%;
   cursor: pointer;
   outline: none;
 }
 
 .amount button[name="minus-children"] {
   margin-left: 26px;
-  background: #f2f2f2 url(../img/minus.png) no-repeat 50% 50%;
+  background: #f2f2f2 url('../img/minus.png') no-repeat 50% 50%;
   cursor: pointer;
   outline: none;
 }
@@ -470,19 +506,8 @@ main .container {
   color: #88b6d1
 }
 
-.entry + input[type="text"],
-.departure + input[type="text"]{
-  background: #f2f2f2 url('../img/calend.png') no-repeat 98% 50%;
-}
-
-.entry + input[type="text"]:hover,
-.departure + input[type="text"]:hover{
-  background: #f2f2f2 url('../img/calend-hover.png') no-repeat 98% 50%;
-}
-
 .entry + input[type="text"]:focus,
 .departure + input[type="text"]:focus{
-  background: #ffffff url('../img/calend-active.png') no-repeat 98% 50%;
   border: 2px solid #e5e5e5;
   box-sizing: border-box;
   height: 37px;
@@ -521,10 +546,30 @@ main .container {
   text-align: center;
 }
 
+.main-footer-hotel .footer-social li{
+  margin-top: -5px;
+}
+
+.main-footer-hotel .footer-social li:first-child {
+  margin-left: 23px;
+}
+
+.main-footer-hotel .footer-copyright {
+
+}
+
 .footer-tag h2 {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+}
+
+.main-footer-hotel .footer-tag h2 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  margin-top: 7px;
+  margin-left: 13px;
 }
 
 .footer-copyright a {
@@ -533,7 +578,7 @@ main .container {
   font-size: 14px;
   line-height: 39px;
   text-decoration: none;
-  background: url(../img/html-logo.png) no-repeat;
+  background: url('../img/html-logo.png') no-repeat;
   height: 39px;
   width: 113px;
   color: transparent;
@@ -541,11 +586,11 @@ main .container {
 }
 
 .footer-copyright a:hover {
-  background: url(../img/html-logo-blue.png) no-repeat;
+  background: url('../img/html-logo-blue.png') no-repeat;
 }
 
 .footer-copyright a:active {
-  background: url(../img/html-logo-gray.png) no-repeat;
+  background: url('../img/html-logo-gray.png') no-repeat;
 }
 
 .main-footer .flex {
@@ -617,7 +662,7 @@ main .container {
 .mainstage-hotel {
   height: 217px;
   background:
-    #59738b url(../img/filter-bg.jpg) center 20% no-repeat;
+    #59738b url('../img/filter-bg.jpg') center 20% no-repeat;
 }
 
 .mainstage-hotel form {
@@ -753,6 +798,11 @@ main .container {
 .infrastructure p,
 .live-type p{
   display: block;
+  margin-bottom: 23px;
+}
+
+.infrastructure .filter-name, .live-type .filter-name {
+  margin-bottom: 20px;
 }
 
 .search-filter input[type="checkbox"]{
@@ -766,20 +816,22 @@ main .container {
 
 .search-filter input[type="checkbox"] + label::before {
   content: "";
+  vertical-align: middle;
   display: inline-block;
   width: 26px;
   height: 22px;
-  background: url(../img/checkbox.png) no-repeat left center;
+  background: url('../img/checkbox.png') no-repeat left center;
   margin-right: 14px;
 
 }
 
 .search-filter input[type="checkbox"]:checked + label::before {
   content: "";
+  vertical-align: middle;
   display: inline-block;
   width: 26px;
   height: 22px;
-  background-image: url(../img/checkbox-checked.png);
+  background-image: url('../img/checkbox-checked.png');
   background-repeat: no-repeat;
 }
 
@@ -940,6 +992,7 @@ form .filter-name {
 
 .sorting-list a {
   text-decoration: none;
+  font-weight: normal;
 }
 
 .results-title {
@@ -961,8 +1014,12 @@ form .filter-name {
   box-sizing: border-box;
 }
 
-.sorting-text p, .sorting-text ul {
+.sorting-text ul {
   margin-top: 23px;
+}
+
+.sorting-text p {
+  margin-top: 20px;
 }
 
 .sorting-title {
@@ -1011,25 +1068,25 @@ form .filter-name {
 }
 
 .ascending {
-  background: url(../img/sort-up.png) no-repeat;
+  background: url('../img/sort-up.png') no-repeat;
   margin-right: 15px;
 }
 
 .arrow:hover {
-  background: url(../img/sort-up-hover.png) no-repeat;
+  background: url('../img/sort-up-hover.png') no-repeat;
 }
 
 .descending {
-  background: url(../img/sort-down.png) no-repeat;
+  background: url('../img/sort-down.png') no-repeat;
 }
 
 .down-active,
 .descending:active,
 .descending:hover{
-  background: url(../img/sort-down-active.png) no-repeat;
+  background: url('../img/sort-down-active.png') no-repeat;
 }
 
 .up-active,
 .ascending:active {
-  background: url(../img/sort-up-active.png) no-repeat;
+  background: url('../img/sort-up-active.png') no-repeat;
 }

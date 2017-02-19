@@ -87,28 +87,38 @@
     </section>
     <section class="map">
       <form class="search-form search-form-invisible" action="#" method="post">
-        <label class="entry" for="date-of-entry">
+        <fieldset class="rel">
+          <label class="entry" for="date-of-entry">
           Дата заезда:
-        </label>
-        <input type="text" name="date-of-entry" placeholder="24 апреля 2017" id="date-of-entry">
-        <label class="departure" for="date-of-departure">
+          </label>
+          <input type="text" name="date-of-entry" placeholder="24 апреля 2017" id="date-of-entry">
+          <button type="button" name="calendar" class="calend">
+          </button>
+        </fieldset>
+        <fieldset class="rel">
+          <label class="departure" for="date-of-departure">
           Дата выезда:
-        </label>
-        <input type="text" name="date-of-departure" placeholder="4 июля 2017" id="date-of-departure">
-        <div class="amount">
-          <label for="amount-of-adults">Взрослые:</label>
-          <button type="button" name="minus-adult">
+          </label>
+          <input type="text" name="date-of-departure" placeholder="4 июля 2017" id="date-of-departure">
+          <button type="button" name="calendar" class="calend">
           </button>
-          <input type="text" name="amount-of-adults" value="2" id="amount-of-adults">
-          <button type="button" name="plus-adult">
-          </button>
-          <label for="amount-of-children">Дети:</label>
-          <button type="button" name="minus-children">
-          </button>
-          <input type="text" name="amount-of-children" value="0" id="amount-of-children">
-          <button type="button" name="plus-children">
-          </button>
-        </div>
+        </fieldset>
+        <fieldset class="rel">
+          <div class="amount">
+            <label for="amount-of-adults">Взрослые:</label>
+            <button type="button" name="minus-adult">
+            </button>
+            <input type="text" name="amount-of-adults" value="2" id="amount-of-adults">
+            <button type="button" name="plus-adult">
+            </button>
+            <label for="amount-of-children">Дети:</label>
+            <button type="button" name="minus-children">
+            </button>
+            <input type="text" name="amount-of-children" value="0" id="amount-of-children">
+            <button type="button" name="plus-children">
+            </button>
+          </div>
+        </fieldset>
         <button type="submit">Найти</button>
       </form>
     </section>
