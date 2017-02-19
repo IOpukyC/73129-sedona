@@ -1090,3 +1090,6 @@ form .filter-name {
 .ascending:active {
   background: url('../img/sort-up-active.png') no-repeat;
 }
+.type-price td {
+  width: 110px;
+}
