@@ -4,126 +4,130 @@
   <link href="css/style.css" rel="stylesheet">
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic">
 </head>
 <body>
+<div class="container">
 <header>
-  <div class="container">
-    <a class="logo" href="#">
-      <img src="img/logo.png" width="138" height="70" alt="City of Sedona">
-    </a>
-    <nav>
-      <ul class="flex">
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a href="#">Карта штата</a></li>
-        <li><a href="#">Гостиницы</a></li>
-      </ul>
-    </nav>
-  </div>
+  <a class="logo">
+    <img src="img/logo.png" width="138" height="70" alt="City of Sedona">
+  </a>
+  <nav>
+    <ul class="flex">
+      <li><a href="#">Информация</a></li>
+      <li><a href="#">Фото и видео</a></li>
+      <li><a href="#">Карта штата</a></li>
+      <li><a href="hotels.html">Гостиницы</a></li>
+    </ul>
+  </nav>
 </header>
 <main>
   <section class="mainstage">
   </section>
-  <div class="container">
     <section class="review">
-      <h3>Седона - небольшой городок в аризоне, заслуживающий большего!</h3>
+      <h3>Седона — небольшой городок в аризоне, заслуживающий большего!</h3>
       <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
     </section>
-    <section class="feature flex">
-      <div class="flex">
-        <h3>Настоящий городок</h3>
-        <p>- #1 -</p>
-        <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+    <section class="features">
+      <div class="feature-img">
+        <div class="feature-item">
+          <h3>Настоящий<br>городок</h3>
+          <p>- №1 -</p>
+          <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
+        <img src="img/index-sidepic.jpg" width="800" height="257" alt="feature 1">
       </div>
-      <img src="img/index-sidepic.jpg" width="800" height="256" alt="feature 1">
-    </section>
-    <section class="grid-3 flex">
-      <div class="flex">
-        <p class="accommodation">Жилье</p>
-        <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+      <div class="grid-3">
+        <div class="feature-name accommodation">
+          <h3>Жилье</h3>
+          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </div>
+        <div class="feature-name food">
+          <h3>Еда</h3>
+          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </div>
+        <div class="feature-name souvenirs">
+          <h3>Сувениры</h3>
+          <p>Не только китайского, но и местного производства!</p>
+        </div>
       </div>
-      <div class="flex">
-        <p class="food">Еда</p>
-        <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+      <div class="img-feature">
+        <img src="img/index-sidepic-left.jpg" width="800" height="257" alt="feature 2">
+        <div class="feature-item">
+          <h3>Там есть<br>мост дьявола</h3>
+          <p>- №2 -</p>
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
       </div>
-      <div class="flex">
-        <p class="souvenirs">Сувениры</p>
-        <p>Не только китайского, но и местного производства!</p>
-      </div>
-    </section>
-    <section class="feature flex">
-      <img src="img/index-sidepic-left.jpg" width="800" height="256" alt="feature 2">
-      <div class="flex">
-        <h3>Там есть мост дьявола</h3>
-        <p>- #2 -</p>
-        <p>Дя, по нему можно пройти! Если конечно вы осмелитесь</p>
-      </div>
-    </section>
-    <section class="grid-3 gray flex">
-      <div class="flex">
-        <p>Небольшая площадь</p>
-        <p>- №3 -</p>
-        <p>Все достопримечательности находятся очень близко</p>
-      </div>
-      <div class="flex">
-        <p>Красивая дорога</p>
-        <p>- №4 -</p>
-        <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
-      </div>
-      <div class="flex">
-        <p>Мало туристов</p>
-        <p>- №5 -</p>
-        <p>Большинство едет в гранд каньон и толпится там</p>
+      <div class="grid-3 grey">
+        <div>
+          <h3>Небольшая<br>площадь</h3>
+          <p>- №3 -</p>
+          <p>Все достопримечательности находятся очень близко</p>
+        </div>
+        <div>
+          <h3>Красивая<br>дорога</h3>
+          <p>- №4 -</p>
+          <p>Ехать в Седону из Лас-Вегаса совсем нескучно!</p>
+        </div>
+        <div>
+          <h3>Мало<br>туристов</h3>
+          <p>- №5 -</p>
+          <p>Большинство едет в Гранд Каньон и толпится там</p>
+        </div>
       </div>
     </section>
     <section class="form-title flex">
-      <h2>Заинтерсовались?</h2>
-      <p>Укажите предполаемые даты поездки, и мы пкажем вам лучшие предложения гостиниц в седоне</p>
-      <button name="form-opener">Поиск гостиницы в седоне</button>
+      <h2>Заинтересовались?</h2>
+      <p>Укажите предполаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <button name="form-opener" class="form-opener">Поиск гостиницы в седоне</button>
     </section>
-    <section class="map flex">
-      <form class="trip flex">
-        <fieldset>
-          <label for="date-from">Дата заезда:</label>
-          <input type="text" id="date-from" name="date-from" value="">
-          <div class="calendar"></div>
-        </fieldset>
-        <fieldset>
-          <label for="date-to">Дата выезда:</label>
-          <input type="text" id="date-to" name="date-to" value="">
-          <div class="calendar"></div>
-        </fieldset>
-        <fieldset>
-          <label for="adults">Взрослые:</label>
-          <div class="minus" id="adult-minus"></div>
-          <input type="text" id="adults" name="adults" value="">
-          <div class="plus" id="adult-plus"></div>
-        </fieldset>
-        <fieldset>
-          <label for="kids">Дети:</label>
-          <div class="minus" id="kids-minus"></div>
-          <input type="text" id="kids" name="kids" value="">
-          <div class="plus" id="kids-plus"></div>
-        </fieldset>
+    <section class="map">
+      <form class="search-form search-form-invisible" action="#" method="post">
+        <label class="entry" for="date-of-entry">
+          Дата заезда:
+        </label>
+        <input type="text" name="date-of-entry" PLACEHOLDER="24 апреля 2016" id="date-of-entry">
+        <label class="departure" for="date-of-departure">
+          Дата выезда:
+        </label>
+        <input type="text" name="date-of-departure" placeholder="4 июля 2016" id="date-of-departure">
+        <div class="amount">
+          <label for="amount-of-adults">Взрослые:</label>
+          <button type="button" name="minus-adult">
+          </button>
+          <input type="text" name="amount-of-adults" value="2" id="amount-of-adults">
+          <button type="button" name="plus-adult">
+          </button>
+          <label for="amount-of-children">Дети:</label>
+          <button type="button" name="minus-children">
+          </button>
+          <input type="text" name="amount-of-children" value="0" id="amount-of-children">
+          <button type="button" name="plus-children">
+          </button>
+        </div>
         <button type="submit">Найти</button>
       </form>
     </section>
-  </div>
 </main>
-<footer class="main-footer">
-  <div class="container flex">
-    <section class="footer-tag">
-      <h2>#visitsedona</h2>
-    </section>
-    <section class="footer-social">
-      <a class="social-btn social-btn-twt" href="#">Tweeter</a>
-      <a class="social-btn social-btn-fb" href="#">Facebook</a>
-      <a class="social-btn social-btn-you" href="#">YouTube</a>
-    </section>
-    <section class="footer-copyright">
-      <a href="https://htmlacademy.ru">Website by</a>
-    </section>
-  </div>
-</footer>
+  <footer class="main-footer">
+    <div class="flex">
+      <section class="footer-tag">
+        <h2>#visitsedona</h2>
+      </section>
+      <section class="footer-social">
+        <ul>
+          <li><a class="social-btn social-btn-twt" href="#">Tweeter</a></li>
+          <li><a class="social-btn social-btn-fb" href="#">Facebook</a></li>
+          <li><a class="social-btn social-btn-you" href="#">YouTube</a></li>
+        </ul>
+      </section>
+      <section class="footer-copyright">
+        <p>Website by <a href="https://htmlacademy.ru">HTML Academy</a></p>
+      </section>
+    </div>
+  </footer>
+</div>
+<script src="js/script.js"></script>
 </body>
 </html>
