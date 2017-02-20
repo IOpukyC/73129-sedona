@@ -291,16 +291,6 @@ main .container {
 .search-form {
   position: relative;
   box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   top: 0;
   left: 50%;
   margin-left: -284px;
@@ -327,6 +317,7 @@ fieldset.rel {
   border: 0;
   margin: 0;
   padding: 0;
+  margin-bottom: 25px;
 }
 
 .calend{
@@ -490,6 +481,7 @@ fieldset.rel {
 }
 
 .search-form > button {
+  margin-top: 30px;
   width: 100%;
   background-color: rgb(129, 179, 210);
   border: medium none;
