@@ -313,6 +313,7 @@ main .container {
 
 fieldset.rel {
   position: relative;
+  text-align: left;
   font-size: 0;
   border: 0;
   margin: 0;
@@ -406,11 +407,11 @@ fieldset.rel {
 }
 
 .search-form .entry {
-  margin-right: 23px;
+  width: 111px;
 }
 
 .search-form .departure {
-  margin-right: 20px;
+  width: 111px;
 }
 
 .search-form .amount {
