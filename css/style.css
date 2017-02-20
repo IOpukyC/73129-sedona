@@ -95,7 +95,7 @@ nav ul li:nth-child(3) {
 }
 
 header ul li {
-  padding: 15px 0;
+  padding: 14px 0 16px;
 }
 
 .main-menu .active,
@@ -106,7 +106,7 @@ header ul li {
 }
 
 .mainstage {
-  height: 510px;
+  height: 507px;
   background:
     url('../img/welcome.png') center no-repeat,
     url('../img/stage-mask.png') bottom no-repeat,
@@ -128,7 +128,7 @@ main .container {
 }
 
 .review h3 {
-  margin-top: 23px;
+  margin-top: 21px;
 }
 
 .feature {
@@ -161,24 +161,30 @@ main .container {
 
 .grid-3 div {
   width: 33.33%;
-  padding: 18px 50px 66px;
+  padding: 18px 50px 67px;
   text-align: center;
 }
 
 .grid-3 h3,
 .feature-item h3 {
-  margin-top: 28px;
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
-  padding-left: 65px;
-  padding-right: 65px;
+  padding-left: 75px;
+  padding-right: 76px;
 }
 
+.feature-item h3 {
+  margin-top: 29px;
+}
+
+.grid-3 h3 {
+  margin-top: 27px;
+}
 
 .grid-3 p {
   color: #333333;
-  margin-top: 22px;
+  margin-top: 23px;
 }
 
 .grid-3 .feature-name {
@@ -196,7 +202,7 @@ main .container {
 .feature-name.accommodation::before {
   content: "";
   position: absolute;
-  top: 57px;
+  top: 59px;
   left: 50%;
   margin-left: -37px;
   display: block;
@@ -208,7 +214,7 @@ main .container {
 .feature-name.food::before {
   content: "";
   position: absolute;
-  top: 57px;
+  top: 59px;
   left: 50%;
   margin-left: -37px;
   display: block;
@@ -220,7 +226,7 @@ main .container {
 .feature-name.souvenirs::before {
   content: "";
   position: absolute;
-  top: 53px;
+  top: 55px;
   left: 50%;
   margin-left: -32px;
   display: block;
@@ -244,13 +250,17 @@ main .container {
 .img-feature .feature-item {
   text-align: center;
   width: 33.33%;
-  padding: 25px 50px 40px 50px;
+  padding: 25px 49px 39px 49px;
   color: #ffffff;
   background-color: #81b3d2;
 }
 
 .feature-item p {
-  padding-top: 5px;
+  padding-top: 4px;
+}
+
+.feature-item p:last-child {
+  padding-top: 7px;
 }
 
 .gray{
@@ -260,7 +270,7 @@ main .container {
 .form-title {
   margin: 0px auto;
   width: 576px;
-  padding: 28px 0 0;
+  padding: 26px 0 0;
   justify-content: center;
 }
 
@@ -271,10 +281,10 @@ main .container {
 
 .form-opener {
   background-color: #766357;
-  width: 508px;
+  width: 568px;
   border: 0;
   cursor: pointer;
-  padding: 30px;
+  padding: 30px 0 28px;
 }
 
 .form-opener a {
@@ -347,6 +357,7 @@ fieldset.rel {
 
 .search-form input {
   display: inline-block;
+  vertical-align: top;
   font-size: 14px;
   border: medium none;
   background-color: rgb(242, 242, 242);
@@ -404,6 +415,7 @@ fieldset.rel {
 .search-form .entry,
 .search-form .departure {
   display: inline-block;
+  vertical-align: top;
   padding-top: 5px;
   margin-bottom: 10px;
   font-size: 14px;
@@ -485,7 +497,7 @@ fieldset.rel {
 }
 
 .search-form > button {
-  margin-top: 30px;
+  margin-top: 28px;
   width: 100%;
   background-color: rgb(129, 179, 210);
   border: medium none;
@@ -529,24 +541,26 @@ fieldset.rel {
 }
 
 .main-footer .footer-copyright p {
-  margin-left: 30px;
-  paddin-top: 5px;
+  margin-left: 28px;
+  width: 200px;
 }
 
 .footer-tag {
   width: 253px;
   margin-right: auto;
   text-align: center;
+  margin-top: 4px;
 }
 
 .footer-copyright {
-  width: 260px;
+  width: 255px;
   margin-left: auto;
   text-align: center;
 }
 
 .footer-social {
   width: 220px;
+  margin-top: 6px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -558,10 +572,6 @@ fieldset.rel {
 
 .main-footer-hotel .footer-social li:first-child {
   margin-left: 23px;
-}
-
-.main-footer-hotel .footer-copyright {
-
 }
 
 .footer-tag h2 {
@@ -580,6 +590,7 @@ fieldset.rel {
 
 .footer-copyright a {
   display: inline-block;
+  vertical-align: middle;
   font-weight: normal;
   font-size: 14px;
   line-height: 39px;
@@ -588,7 +599,7 @@ fieldset.rel {
   height: 39px;
   width: 113px;
   color: transparent;
-  margin-left: 8px;
+  margin-left: 3px;
 }
 
 .footer-copyright a:hover {
@@ -624,6 +635,7 @@ fieldset.rel {
 
 .footer-social li {
   display: inline-block;
+  vertical-align: top;
   width: 46px;
   height: 48px;
   margin-right: 6px;
@@ -632,12 +644,11 @@ fieldset.rel {
 }
 
 .footer-social li:nth-child(2){
-
   background: #81b3d2 url('../img/f.png') no-repeat 50% 50%;
 }
 
 .footer-social li:last-child {
-
+  margin-right: 0;
   background: #81b3d2 url('../img/you.png') no-repeat 50% 50%;
 }
 
@@ -650,19 +661,11 @@ fieldset.rel {
 }
 
 .footer-social li:nth-child(2):active{
-
   background: #5496bd url('../img/f-active.png') no-repeat 50% 50%;
 }
 
 .footer-social li:last-child:active {
-
   background: #5496bd url('../img/you-active.png') no-repeat 50% 50%;
-}
-
-.main-footer .footer-copyright,
-.main-footer-hotel .footer-copyright {
-  display: flex;
-  align-items: center;
 }
 
 .mainstage-hotel {
@@ -673,7 +676,7 @@ fieldset.rel {
 
 .mainstage-hotel form {
   display: flex;
-  padding: 30px 73px;
+  padding: 27px 71px;
 }
 
 .hotel-info {
@@ -686,6 +689,16 @@ fieldset.rel {
 
 .hotel-info:first-child {
   border-top: 1px solid #e5e5e5;
+}
+
+.type-price {
+  margin-top: -7px;
+}
+
+.type-price p {
+  display: inline-block;
+  vertical-align: top;
+  width: 111px;
 }
 
 .hotel-info h3{
@@ -721,6 +734,7 @@ fieldset.rel {
 
 .hotel-info .btn-more{
   display: inline-block;
+  vertical-align: top;
   padding: 3px 17px;
   font-weight: bold;
   font-size: 14px;
@@ -732,10 +746,12 @@ fieldset.rel {
   border: none;
   background-color: #81b3d2;
   cursor: pointer;
+  margin-right: 1px;
 }
 
 .hotel-info .btn-book {
   display: inline-block;
+  vertical-align: top;
   padding: 3px 17px;
   font-weight: bold;
   font-size: 14px;
@@ -804,11 +820,11 @@ fieldset.rel {
 .infrastructure p,
 .live-type p{
   display: block;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
 
 .infrastructure .filter-name, .live-type .filter-name {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .search-filter input[type="checkbox"]{
@@ -828,7 +844,7 @@ fieldset.rel {
   height: 22px;
   background: url('../img/checkbox.png') no-repeat left center;
   margin-right: 14px;
-
+  margin-bottom: 4px;
 }
 
 .search-filter input[type="checkbox"]:checked + label::before {
@@ -839,6 +855,26 @@ fieldset.rel {
   height: 22px;
   background-image: url('../img/checkbox-checked.png');
   background-repeat: no-repeat;
+}
+
+.search-filter input[type="checkbox"]:disabled + label::before {
+  content: "";
+  vertical-align: middle;
+  display: inline-block;
+  width: 26px;
+  height: 22px;
+  background: url('../img/checkbox-disabled.png') no-repeat left center;
+  margin-right: 14px;
+  margin-bottom: 4px;
+}
+
+.search-filter input[type="checkbox"]:checked:disabled + label::before {
+  content: "";
+  vertical-align: middle;
+  display: inline-block;
+  width: 26px;
+  height: 22px;
+  background: url('../img/checkbox-checked-disabled.png') no-repeat left center;
 }
 
 form .filter-name {
@@ -852,7 +888,7 @@ form .filter-name {
 
 .infrastructure,
 .live-type {
-  width: 253px;
+  width: 255px;
 }
 
 .infrastructure input,
@@ -861,7 +897,7 @@ form .filter-name {
 }
 
 .filter-range {
-  width: 317px;
+  width: 328px;
   color: #ffffff;
   text-transform: uppercase;
   margin-left: auto;
@@ -877,8 +913,8 @@ form .filter-name {
 
 .price-controls {
   position: relative;
-  height: 30px;
   margin-bottom: 20px;
+  margin-left: 10px;
   font-size: 0;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -904,13 +940,13 @@ form .filter-name {
 }
 
 .price-controls .min-price {
-  padding-right: 20px;
+  padding-right: 24px;
 }
 
 .price-controls .min-price,
 .price-controls .max-price {
   width: 90px;
-  padding-left: 37px;
+  padding-left: 33px;
 }
 
 .price-controls input {
@@ -925,6 +961,7 @@ form .filter-name {
 .range-controls {
   position: relative;
   margin-bottom: 32px;
+  margin-left: 10px;
 }
 
 .range-controls .scale {
@@ -959,7 +996,7 @@ form .filter-name {
 }
 
 .range-toggle-max {
-  left: 80%;
+  left: 79%;
 }
 
 .btn-transparent {
@@ -984,7 +1021,6 @@ form .filter-name {
 .results-wrapper {
   text-align: left;
   padding: 0 6%;
-  padding: 0 calc((20% - 93px)/2);
 }
 
 .sorting p,
@@ -1016,6 +1052,7 @@ form .filter-name {
 
 .sorting-text {
   display: inline-block;
+  vertical-align: top;
   width: 94.8%;
   box-sizing: border-box;
 }
@@ -1061,12 +1098,13 @@ form .filter-name {
 .sorting-controls {
   font-size: 0;
   box-sizing: border-box;
-  padding-top: 24px;
+  padding-top: 23px;
   padding-left: 16px;
 }
 
 .arrow {
   display: inline-block;
+  vertical-align: top;
   font-size: 0;
   height: 9px;
   width: 10px;
@@ -1096,6 +1134,7 @@ form .filter-name {
 .ascending:active {
   background: url('../img/sort-up-active.png') no-repeat;
 }
-.type-price td {
-  width: 110px;
+
+section.hotels {
+  margin-bottom: 117px;
 }
