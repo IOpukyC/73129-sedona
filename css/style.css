@@ -325,7 +325,7 @@ main .container {
 
 fieldset.rel {
   position: relative;
-  display: flex;
+  font-size: 0;
   border: 0;
   margin: 0;
   padding: 0;
@@ -353,9 +353,12 @@ fieldset.rel {
 }
 
 .search-form input {
+  display: inline-block;
+  font-size: 14px;
   border: medium none;
   background-color: rgb(242, 242, 242);
-  height: 35px;
+  padding-top: 11px;
+  padding-bottom: 10px;
   width: 331px;
   text-transform: uppercase;
   cursor: pointer;
@@ -407,8 +410,10 @@ fieldset.rel {
 
 .search-form .entry,
 .search-form .departure {
+  display: inline-block;
   padding-top: 5px;
-  margin-bottom: 10px
+  margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .search-form .entry {
@@ -428,6 +433,9 @@ fieldset.rel {
   box-sizing: border-box
 }
 
+.amount label {
+  font-size: 14px;
+}
 .amount button {
   height: 37px;
   width: 40px;
@@ -523,12 +531,16 @@ fieldset.rel {
 }
 
 .main-footer div {
-  min-width: 768px;
-  max-width: 1200px;
+  margin-top: -15px;
+}
+
+.main-footer .footer-copyright p {
+  margin-left: 30px;
+  paddin-top: 5px;
 }
 
 .footer-tag {
-  width: 240px;
+  width: 253px;
   margin-right: auto;
   text-align: center;
 }
