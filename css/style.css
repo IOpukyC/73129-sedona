@@ -10,44 +10,32 @@ body {
   text-align: center;
 }
 
-img {
+.container img {
   display: block;
 }
 
-p {
+.container p {
   line-height: 21px;
 }
 
-a, a:hover, a:active {
+.main-menu a,
+.form-opener a{
   text-decoration: none;
   color: #000;
   font-weight:bold;
 }
 
-a:hover {
+.main-menu a:hover {
   color: #81b3d2;
 }
 
-a:active {
+.main-menu a:active {
   color: rgba(0, 0, 0, .3);
-}
-
-h1 {
-  font-size: 30px;
-  line-height: 24px;
-  font-weight: bold;
 }
 
 .form-title h2 {
   font-size: 30px;
   line-height: 30px;
-}
-
-h3 {
-  margin-top: 28px;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
 }
 
 .container {
@@ -69,10 +57,11 @@ h3 {
   transform: translateX(-50%);
 }
 
-nav {
+.main-menu {
   width:inherit;
 }
-header nav ul {
+
+.menu{
   list-style: none;
   margin: 0 ;
   padding: 0;
@@ -80,22 +69,19 @@ header nav ul {
   background-color:#fff;
 }
 
-nav ul li {
+.menu li {
   width: 20%;
   background-color: #fff;
   text-align: center;
+  padding: 14px 0 16px;
 }
 
-nav ul li:nth-child(2) {
+.menu li:nth-child(2) {
   margin-right: auto;
 }
 
-nav ul li:nth-child(3) {
+.menu li:nth-child(3) {
   margin-left: auto;
-}
-
-header ul li {
-  padding: 14px 0 16px;
 }
 
 .main-menu .active,
@@ -123,12 +109,16 @@ main .container {
   padding: 40px 0;
 }
 
-.review p {
-  padding-top: 8px;
-}
 
 .review h3 {
   margin-top: 21px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.review p {
+  padding-top: 8px;
 }
 
 .feature {
@@ -238,6 +228,7 @@ main .container {
 .grey div{
   background-color: #eeeeee;
   text-align: center;
+  padding: 18px 60px;
   padding-bottom: 45px;
 }
 
@@ -257,10 +248,11 @@ main .container {
 
 .feature-item p {
   padding-top: 4px;
+  line-height: 21px;
 }
 
 .feature-item p:last-child {
-  padding-top: 7px;
+  padding-top: 6px;
 }
 
 .gray{
@@ -275,8 +267,9 @@ main .container {
 }
 
 .form-title p {
-  margin-top: 5px;
+  margin-top: 6px;
   margin-bottom: 50px;
+
 }
 
 .form-opener {
@@ -296,17 +289,23 @@ main .container {
 }
 
 .map {
-  background: url('../img/map.jpg') center no-repeat;
+  width: 1200px;
   height: 593px;
   justify-content:center;
 }
 
+.map iframe {
+  background: #e3ead9 url('../img/map.jpg') center no-repeat;
+  width: 1200px;
+  height: 593px;
+  border: 0;
+}
+
 .search-form {
-  position: relative;
+  position: absolute;
   box-sizing: border-box;
-  top: 0;
   left: 50%;
-  margin-left: -284px;
+  transform: translateX(-50%);
   padding: 55px;
   width: 568px;
   height: 395px;
@@ -381,7 +380,12 @@ fieldset.rel {
 
 .search-form input[name="date-of-entry"],
 .search-form input[name="date-of-departure"] {
-  padding-left: 15px
+  padding-left: 15px;
+}
+
+.search-form input[name="date-of-entry"]:focus,
+.search-form input[name="date-of-departure"]:focus {
+  padding-left: 13px;
 }
 
 .date-of-entry-cal,
@@ -496,6 +500,24 @@ fieldset.rel {
   outline: none;
 }
 
+.amount button[name="minus-adult"]:hover,
+.amount button[name="minus-children"]:hover{
+  background: #f2f2f2 url('../img/minus-hover.png') no-repeat 50% 50%;
+}
+
+.amount button:hover {
+  background: #f2f2f2 url('../img/plus-hover.png') no-repeat 50% 50%;
+}
+
+.amount button[name="minus-adult"]:active,
+.amount button[name="minus-children"]:active{
+  background: #f2f2f2 url('../img/minus-active.png') no-repeat 50% 50%;
+}
+
+.amount button:active {
+  background: #f2f2f2 url('../img/plus-active.png') no-repeat 50% 50%;
+}
+
 .search-form > button {
   margin-top: 28px;
   width: 100%;
@@ -536,11 +558,21 @@ fieldset.rel {
   height: 50px;
 }
 
-.main-footer div {
+.hotel-footer {
+  margin-top: -117px;
+  background-color: rgb(255,255,255);
+  padding: 34px 73px;
+  vertical-align: middle;
+  height: 50px;
+}
+
+
+.main-footer div,
+.hotel-footer div {
   margin-top: -15px;
 }
 
-.main-footer .footer-copyright p {
+.footer-copyright p {
   margin-left: 28px;
   width: 200px;
 }
@@ -566,13 +598,6 @@ fieldset.rel {
   text-align: center;
 }
 
-.main-footer-hotel .footer-social li{
-  margin-top: -5px;
-}
-
-.main-footer-hotel .footer-social li:first-child {
-  margin-left: 23px;
-}
 
 .footer-tag h2 {
   font-weight: bold;
@@ -580,13 +605,6 @@ fieldset.rel {
   line-height: 26px;
 }
 
-.main-footer-hotel .footer-tag h2 {
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
-  margin-top: 7px;
-  margin-left: 13px;
-}
 
 .footer-copyright a {
   display: inline-block;
@@ -610,20 +628,11 @@ fieldset.rel {
   background: url('../img/html-logo-gray.png') no-repeat;
 }
 
-.main-footer .flex {
+.main-footer .flex,
+.hotel-footer .flex {
   display: flex;
   align-items: center;
 
-}
-
-.main-footer-hotel .flex {
-  display: flex;
-  align-items: center;
-  padding: 23px 0;
-}
-
-.main-footer-hotel {
-  padding: 0 73px;
 }
 
 .footer-social ul{

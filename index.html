@@ -4,18 +4,15 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style_min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic">
-
 </head>
 <body>
 <div class="container">
   <header>
-    <a class="logo">
-      <img src="img/logo.png" width="138" height="70" alt="City of Sedona">
-    </a>
-    <nav>
-      <ul class="flex">
+    <nav class="main-menu">
+      <a class="logo"><img src="img/logo.png" width="138" height="70" alt="City of Sedona"></a>
+      <ul class="menu">
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
         <li><a href="#">Карта штата</a></li>
@@ -90,7 +87,7 @@
       <form class="search-form search-form-invisible" action="#" method="post">
         <fieldset class="rel">
           <label class="entry" for="date-of-entry">
-          Дата заезда:
+            Дата заезда:
           </label>
           <input type="text" name="date-of-entry" placeholder="24 апреля 2017" id="date-of-entry">
           <button type="button" name="calendar" class="calend">
@@ -98,7 +95,7 @@
         </fieldset>
         <fieldset class="rel">
           <label class="departure" for="date-of-departure">
-          Дата выезда:
+            Дата выезда:
           </label>
           <input type="text" name="date-of-departure" placeholder="4 июля 2017" id="date-of-departure">
           <button type="button" name="calendar" class="calend">
@@ -122,6 +119,8 @@
         </fieldset>
         <button type="submit">Найти</button>
       </form>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d705292.9838963356!2d-112.24375133106673!3d34.79774141030631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1487697508396" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+      </iframe>
     </section>
   </main>
   <footer class="main-footer">
