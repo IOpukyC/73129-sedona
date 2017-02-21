@@ -198,7 +198,8 @@ main .container {
   display: block;
   width: 75px;
   height: 75px;
-  background: url('../img/acco-icon.png') no-repeat;
+  background: url('../img/sprite.png') no-repeat;
+  background-position: -10px -10px;
 }
 
 .feature-name.food::before {
@@ -210,7 +211,8 @@ main .container {
   display: block;
   width: 74px;
   height: 70px;
-  background: url('../img/food-icon.png') no-repeat;
+  background: url('../img/sprite.png') no-repeat;
+  background-position: -105px -94px;
 }
 
 .feature-name.souvenirs::before {
@@ -222,7 +224,8 @@ main .container {
   display: block;
   width: 64px;
   height: 76px;
-  background: url('../img/souv-icon.png') no-repeat;
+  background: url('../img/sprite.png') no-repeat;
+  background-position: -300px -130px;
 }
 
 .grey div{
@@ -340,6 +343,7 @@ fieldset.rel {
   margin: 0;
   padding: 0;
   margin-bottom: 25px;
+  margin-top: 3px;
 }
 
 .calend{
@@ -349,18 +353,21 @@ fieldset.rel {
   height: 37px;
   width: 40px;
   border: none;
-  background: url('../img/calend.png') no-repeat 50% 50%;
+  background: url('../img/sprite.png') no-repeat 50% 50%;
+  background-position: -96px -2px;
   cursor: pointer;
   outline: none;
   color: #a9a9a9;
 }
 
 .calend:hover{
-  background: url('../img/calend-hover.png') no-repeat 50% 50%;
+  background: url('../img/sprite.png') no-repeat 50% 50%;
+  background-position: -178px -2px;
 }
 
 .calend:active{
-  background: url('../img/calend-active.png') no-repeat 50% 50%;
+  background: url('../img/sprite.png') no-repeat 50% 50%;
+  background-position: -137px -2px;
 }
 
 .search-form input {
@@ -441,7 +448,6 @@ fieldset.rel {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 40px;
   width: 458px;
   box-sizing: border-box
 }
@@ -449,11 +455,13 @@ fieldset.rel {
 .amount label {
   font-size: 14px;
 }
+
 .amount button {
   height: 37px;
   width: 40px;
   border: none;
-  background: #f2f2f2 url('../img/plus.png') no-repeat 50% 50%;
+  background: #f2f2f2 url('../img/sprite.png') no-repeat 50% 50%;
+  background-position: -351px -56px;
   cursor: pointer;
   outline: none;
   color: #a9a9a9
@@ -461,7 +469,8 @@ fieldset.rel {
 
 .amount button[name="plus-adult"] {
   margin-right: 52px;
-  background: #f2f2f2 url('../img/plus.png') no-repeat 50% 50%;
+  background: #f2f2f2 url('../img/sprite.png') no-repeat 50% 50%;
+  background-position: -351px -56px;
   cursor: pointer;
   outline: none;
 }
@@ -492,38 +501,52 @@ fieldset.rel {
 
 .amount button[name="minus-adult"] {
   margin-left: 40px;
-  background: #f2f2f2 url('../img/minus.png') no-repeat 50% 50%;
+  background: #f2f2f2 url('../img/sprite.png') no-repeat 50% 50%;
+  background-position: -255px -52px;
   cursor: pointer;
   outline: none;
 }
 
 .amount button[name="minus-children"] {
   margin-left: 26px;
-  background: #f2f2f2 url('../img/minus.png') no-repeat 50% 50%;
+  background: #f2f2f2 url('../img/sprite.png') no-repeat 50% 50%;
+  background-position: -255px -52px;
   cursor: pointer;
   outline: none;
 }
 
 .amount button[name="minus-adult"]:hover,
 .amount button[name="minus-children"]:hover{
-  background: #f2f2f2 url('../img/minus-hover.png') no-repeat 50% 50%;
-}
-
-.amount button:hover {
-  background: #f2f2f2 url('../img/plus-hover.png') no-repeat 50% 50%;
+  background: #f2f2f2 url('../img/sprite.png') no-repeat 50% 50%;
+  background-position: -319px -52px;
 }
 
 .amount button[name="minus-adult"]:active,
 .amount button[name="minus-children"]:active{
-  background: #f2f2f2 url('../img/minus-active.png') no-repeat 50% 50%;
+  background: #f2f2f2 url('../img/sprite.png') no-repeat 50% 50%;
+  background-position: -287px -52px;
+}
+
+.amount button[name="plus-adult"] {
+  margin-right: 52px;
+  background: #f2f2f2 url('../img/sprite.png') no-repeat 50% 50%;
+  background-position: -351px -56px;
+  cursor: pointer;
+  outline: none;
+}
+
+.amount button:hover {
+  background: #f2f2f2 url('../img/sprite.png') no-repeat 50% 50%;
+  background-position: -255px -87px;
 }
 
 .amount button:active {
-  background: #f2f2f2 url('../img/plus-active.png') no-repeat 50% 50%;
+  background: #f2f2f2 url('../img/sprite.png') no-repeat 50% 50%;
+  background-position: -185px -87px;
 }
 
 .search-form > button {
-  margin-top: 28px;
+  margin-top: 31px;
   width: 100%;
   background-color: rgb(129, 179, 210);
   border: medium none;
@@ -562,7 +585,7 @@ fieldset.rel {
 }
 
 .hotel-footer {
-  margin-top: -117px;
+  margin-top: -113px;
   background-color: rgb(255,255,255);
   padding: 34px 73px;
   vertical-align: middle;
@@ -583,7 +606,6 @@ fieldset.rel {
   width: 253px;
   margin-right: auto;
   text-align: center;
-  margin-top: 4px;
 }
 
 .footer-copyright {
@@ -594,7 +616,6 @@ fieldset.rel {
 
 .footer-social {
   width: 220px;
-  margin-top: 6px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -607,6 +628,9 @@ fieldset.rel {
   line-height: 26px;
 }
 
+.footer-copyright p {
+  margin-top: 17px;
+}
 
 .footer-copyright a {
   display: inline-block;
@@ -615,7 +639,8 @@ fieldset.rel {
   font-size: 14px;
   line-height: 39px;
   text-decoration: none;
-  background: url('../img/html-logo.png') no-repeat;
+  background: url('../img/sprite.png') no-repeat;
+  background-position: -10px -184px;
   height: 39px;
   width: 113px;
   color: transparent;
@@ -623,11 +648,13 @@ fieldset.rel {
 }
 
 .footer-copyright a:hover {
-  background: url('../img/html-logo-blue.png') no-repeat;
+  background: url('../img/sprite.png') no-repeat;
+  background-position: -143px -184px;
 }
 
 .footer-copyright a:active {
-  background: url('../img/html-logo-gray.png') no-repeat;
+  background: url('../img/sprite.png') no-repeat;
+  background-position: -270px -10px;
 }
 
 .main-footer .flex,
@@ -650,17 +677,20 @@ fieldset.rel {
   width: 46px;
   height: 48px;
   margin-right: 6px;
-  background: #81b3d2 url('../img/t.png') no-repeat 50% 50%;
+  background: #81b3d2 url('../img/sprite.png') no-repeat 50% 50%;
+  background-position: -216px -112px;
   cursor:pointer;
 }
 
 .footer-social li:nth-child(2){
-  background: #81b3d2 url('../img/f.png') no-repeat 50% 50%;
+  background: #81b3d2 url('../img/sprite.png') no-repeat 50% 50%;
+  background-position: -222px -36px;
 }
 
 .footer-social li:last-child {
   margin-right: 0;
-  background: #81b3d2 url('../img/you.png') no-repeat 50% 50%;
+  background: #81b3d2 url('../img/sprite.png') no-repeat 50% 50%;
+  background-position: -371px -148px;
 }
 
 .footer-social li:hover {
@@ -668,15 +698,18 @@ fieldset.rel {
 }
 
 .footer-social li:active {
-  background: #5496bd url('../img/t-active.png') no-repeat 50% 50%;
+  background: #5496bd url('../img/sprite.png') no-repeat 50% 50%;
+  background-position: -370px -112px;
 }
 
 .footer-social li:nth-child(2):active{
-  background: #5496bd url('../img/f-active.png') no-repeat 50% 50%;
+  background: #5496bd url('../img/sprite.png') no-repeat 50% 50%;
+  background-position: -222px -75px;
 }
 
 .footer-social li:last-child:active {
-  background: #5496bd url('../img/you-active.png') no-repeat 50% 50%;
+  background: #5496bd url('../img/sprite.png') no-repeat 50% 50%;
+  background-position: -371px -184px;
 }
 
 .mainstage-hotel {
@@ -853,7 +886,8 @@ fieldset.rel {
   display: inline-block;
   width: 26px;
   height: 22px;
-  background: url('../img/checkbox.png') no-repeat left center;
+  background: url('../img/sprite.png') no-repeat left center;
+  background-position: -228px -10px;
   margin-right: 14px;
   margin-bottom: 4px;
 }
@@ -864,8 +898,8 @@ fieldset.rel {
   display: inline-block;
   width: 26px;
   height: 22px;
-  background-image: url('../img/checkbox-checked.png');
-  background-repeat: no-repeat;
+  background: url('../img/sprite.png') no-repeat;
+  background-position: -105px -52px;
 }
 
 .search-filter input[type="checkbox"]:disabled + label::before {
@@ -874,7 +908,8 @@ fieldset.rel {
   display: inline-block;
   width: 26px;
   height: 22px;
-  background: url('../img/checkbox-disabled.png') no-repeat left center;
+  background: url('../img/sprite.png') no-repeat left center;
+  background-position: -197px -52px;
   margin-right: 14px;
   margin-bottom: 4px;
 }
@@ -885,7 +920,8 @@ fieldset.rel {
   display: inline-block;
   width: 26px;
   height: 22px;
-  background: url('../img/checkbox-checked-disabled.png') no-repeat left center;
+  background: url('../img/sprite.png') no-repeat left center;
+  background-position: -151px -52px;
 }
 
 form .filter-name {
@@ -1123,30 +1159,38 @@ form .filter-name {
 }
 
 .ascending {
-  background: url('../img/sort-up.png') no-repeat;
+  background: url('../img/sprite.png') no-repeat;
+  background-position: -393px -100px;
   margin-right: 15px;
 }
 
 .arrow:hover {
-  background: url('../img/sort-up-hover.png') no-repeat;
+  background: url('../img/sprite.png') no-repeat;
+  background-position: -41px -130px;
 }
 
 .descending {
-  background: url('../img/sort-down.png') no-repeat;
+  background: url('../img/sprite.png') no-repeat;
+  background-position: -300px -100px;
 }
 
 .down-active,
-.descending:active,
-.descending:hover{
-  background: url('../img/sort-down-active.png') no-repeat;
+.descending:active {
+  background: url('../img/sprite.png') no-repeat;
+  background-position: -331px -100px;
+}
+
+.descending:hover {
+  background: url('../img/sprite.png') no-repeat;
+  background-position: -362px -100px;
 }
 
 .up-active,
 .ascending:active {
-  background: url('../img/sort-up-active.png') no-repeat;
+  background: url('../img/sprite.png') no-repeat;
+  background-position: -10px -130px;
 }
 
 section.hotels {
   margin-bottom: 117px;
 }
-
