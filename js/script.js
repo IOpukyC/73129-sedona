@@ -12,12 +12,3 @@ link.addEventListener("click", function(event){
   };
   dateEntry.focus();
 });
-
-window.addEventListener("keydown", function(event) {
-  if (event.keyCode === 27) {
-    if (searchForm.classList.contains("search-form-visible")) {
-      searchForm.classList.remove("search-form-visible");
-      searchForm.classList.add("search-form-invisible");
-    }
-  }
-});

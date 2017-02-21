@@ -319,8 +319,17 @@ main .container {
   display: none
 }
 
+@keyframes form_opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .search-form-visible {
-  animation: form_opacity 0.7s;
+  animation: form_opacity 1s;
 }
 
 fieldset.rel {
@@ -340,25 +349,25 @@ fieldset.rel {
   height: 37px;
   width: 40px;
   border: none;
-  background: #f2f2f2 url('../img/calend.png') no-repeat 50% 50%;
+  background: url('../img/calend.png') no-repeat 50% 50%;
   cursor: pointer;
   outline: none;
   color: #a9a9a9;
 }
 
 .calend:hover{
-  background: #f2f2f2 url('../img/calend-hover.png') no-repeat 50% 50%;
+  background: url('../img/calend-hover.png') no-repeat 50% 50%;
 }
 
 .calend:active{
-  background: #f2f2f2 url('../img/calend-active.png') no-repeat 50% 50%;
+  background: url('../img/calend-active.png') no-repeat 50% 50%;
 }
 
 .search-form input {
   display: inline-block;
   vertical-align: top;
   font-size: 14px;
-  border: medium none;
+  border: 0;
   background-color: rgb(242, 242, 242);
   padding-top: 11px;
   padding-bottom: 10px;
@@ -375,17 +384,12 @@ fieldset.rel {
 
 .search-form input:focus {
   background-color: #ffffff;
-  outline: 2px solid #ebebeb
+  outline: 2px solid #ebebeb;
 }
 
 .search-form input[name="date-of-entry"],
 .search-form input[name="date-of-departure"] {
   padding-left: 15px;
-}
-
-.search-form input[name="date-of-entry"]:focus,
-.search-form input[name="date-of-departure"]:focus {
-  padding-left: 13px;
 }
 
 .date-of-entry-cal,
@@ -544,14 +548,13 @@ fieldset.rel {
 
 .entry + input[type="text"]:focus,
 .departure + input[type="text"]:focus{
-  border: 2px solid #e5e5e5;
-  box-sizing: border-box;
-  height: 37px;
-  width: 346px;
+  border-color: #e5e5e5;
+  width: 331px;
 }
 
 .main-footer {
-  margin-top: -120px;
+  position: relative;
+  margin-top: -115px;
   background-color: rgba(255,255,255, 0.9);
   padding: 35px 73px;
   vertical-align: middle;
@@ -565,7 +568,6 @@ fieldset.rel {
   vertical-align: middle;
   height: 50px;
 }
-
 
 .main-footer div,
 .hotel-footer div {
@@ -1147,3 +1149,4 @@ form .filter-name {
 section.hotels {
   margin-bottom: 117px;
 }
+
