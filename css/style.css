@@ -66,6 +66,7 @@ body {
   margin: 0 ;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   background-color:#fff;
 }
 
@@ -77,11 +78,11 @@ body {
 }
 
 .menu li:nth-child(2) {
-  margin-right: auto;
+  margin-right: 10%;
 }
 
 .menu li:nth-child(3) {
-  margin-left: auto;
+  margin-left: 10%;
 }
 
 .main-menu .active,
